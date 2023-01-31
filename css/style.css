@@ -51,6 +51,12 @@ h2 {
 hr {
     border: 1px double var(--bg-w-3);
 }
+
+a{
+    color: var(--bg-main);
+    text-decoration: none;
+}
+
 p {
     margin: 20px 0;
     text-align: center;
@@ -87,3 +93,39 @@ footer {
     border-top: 1px solid var(--bg-w-3);
     text-align: center;
 }
+
+.container {
+    background-color:var(--bg-w-2) ;
+    border: 1px solid var(--bg-w-3);
+    max-width: 450px;
+    min-height: 300px;
+    padding: 60px;
+    border-radius: 10px;
+
+}
+
+.dark {
+    --bg-main: #ffb900;
+    --bg-text-1: #fff;
+    --bg-w-1: #111;
+    --bg-w-2: #333;
+    --bg-w-3: #000;
+    --icon:"🌑"
+
+}
+
+#refresh {
+    cursor: pointer;
+}
+
+#imgDark::before {
+    content: var(--icon);
+}
+
+#imgDark {
+    margin: 0 auto;
+    font-size: 5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
